@@ -5,12 +5,12 @@
  */
 export default [{
   key: 'dashboard',
-  label: 'Dashboard',
+  label: '作业面板',
   pages: [{
     key: 'dashboard',
-    label: 'Dashboard',
+    label: '作业面板',
     perms: [
-      {key: 'view', label: '查看Dashboard'}
+      {key: 'view', label: '查看作业面板'}
     ]
   }]
 }, {

@@ -54,7 +54,7 @@ export default function Sider(props) {
   return (
     <Layout.Sider width={208} collapsed={props.collapsed} className={styles.sider}>
       <div className={styles.logo}>
-        <img src={logo} alt="Logo"/>
+        <img src="https://resource.static.tencent.itan90.cn/mac_pic/2022-09-18/EFzAOC-removebg-preview.png" alt="Logo"/>
       </div>
       <div className={styles.menus} style={{height: `${document.body.clientHeight - 64}px`}}>
         <Menu

@@ -47,7 +47,7 @@ function WebSSH(props) {
   const [sshMode] = useState(hasPermission('host.console.view'))
 
   useEffect(() => {
-    window.document.title = 'Spug web terminal'
+    window.document.title = 'Ops terminal'
     window.addEventListener('beforeunload', leaveTips)
     fetchNodes()
     gStore.fetchUserSettings()
@@ -211,18 +211,12 @@ function WebSSH(props) {
   }
 
   const spug_web_terminal =
-    '                                                 __       __                          _                __\n' +
-    '   _____ ____   __  __ ____ _   _      __ ___   / /_     / /_ ___   _____ ____ ___   (_)____   ____ _ / /\n' +
-    '  / ___// __ \\ / / / // __ `/  | | /| / // _ \\ / __ \\   / __// _ \\ / ___// __ `__ \\ / // __ \\ / __ `// / \n' +
-    ' (__  )/ /_/ // /_/ // /_/ /   | |/ |/ //  __// /_/ /  / /_ /  __// /   / / / / / // // / / // /_/ // /  \n' +
-    '/____// .___/ \\__,_/ \\__, /    |__/|__/ \\___//_.___/   \\__/ \\___//_/   /_/ /_/ /_//_//_/ /_/ \\__,_//_/   \n' +
-    '     /_/            /____/                                                                               \n'
-
+    '	选择左侧主机进行连接在线终端	\n'
   return hasPermission('host.console.view|host.console.list') ? (
     <div className={styles.container} onMouseUp={() => posX = 0} onMouseMove={handleMouseMove}>
       <div className={styles.sider} style={{width}}>
         <div className={styles.logo}>
-          <img src={LogoSpugText} alt="logo"/>
+          <img src="https://resource.static.tencent.itan90.cn/mac_pic/2022-09-18/EFzAOC-removebg-preview.png" alt="logo"/>
         </div>
         <div className={styles.hosts}>
           <Spin spinning={fetching}>

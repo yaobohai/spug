@@ -46,7 +46,7 @@ export default [
   {icon: <DesktopOutlined/>, title: '工作台', path: '/home', component: HomeIndex},
   {
     icon: <DashboardOutlined/>,
-    title: 'Dashboard',
+    title: '作业面板',
     auth: 'dashboard.dashboard.view',
     path: '/dashboard',
     component: DashboardIndex
